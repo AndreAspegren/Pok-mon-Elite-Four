@@ -683,6 +683,8 @@ const froakie = new Audio('sounds/froakie.mp3')
 const gible = new Audio('sounds/gible.mp3')
 const drapion = new Audio('sounds/drapion.mp3')
 const pikachu = new Audio('sounds/pikachu.mp3')
+const statrise = new Audio('sounds/statrise.mp3')
+const statfall = new Audio('sounds/statfall.mp3')
 
 const sounds = {
     heracross: heracross,

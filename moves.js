@@ -5,9 +5,11 @@ function Swordsdance(who, when) {
         if (uattackstate == 11) {
             uattackstate += 1;
             battlemessage = 'Angrepet økte betraktelig!'
+            statrise.play()
         } if (uattackstate < 11) {
             uattackstate += 2;
             battlemessage = 'Angrepet økte betraktelig!'
+            statrise.play()
         } 
         if (uattackstate >= 12) battlemessage = 'Angrepet til' + ' ' + uname + ' ' + 'kan ikke gå høyere!'
         updateuattack(who);
@@ -26,6 +28,7 @@ function Dragondance(who, when) {
         if (uattackstate < 12) {
             uattackstate += 1;
             battlemessage = 'Angrepet og hastigheten økte betraktelig!'
+            statrise.play()
             if (who == 'friend') player.pokemon[0].speed += player.pokemon[0].speed * 1.33
             if (who == 'foe') rival.pokemon[0].speed += rival.pokemon[0].speed * 1.33
             updateuattack(who);
@@ -58,6 +61,7 @@ function Poweruppunch(who, when) {
                     uattackstate += 1
                     updateuattack(who)
                     battlemessage = uname + ' ' + 'sitt angrep økte!'
+                    statrise.play()
                     updateview()
                 }
             }, 2000)
@@ -81,16 +85,19 @@ function Calmmind(who, when) {
             uattackstate += 1;
             udefensestate += 1;
             battlemessage = 'Angrepet og forsvaret økte!'
+            statrise.play()
             updateuattack(who);
             updateudefense(who);
         } if (uattackstate < 12 && udefensestate >= 12) {
             uattackstate += 1
+            statrise.play()
             updateuattack(who);
             battlemessage = 'Angrepet økte!'
         } if (udefensestate < 12 && uattackstate >= 12) {
             udefensestate += 1
             updateudefense(who);
             battlemessage = 'Forsvaret økte!'
+            statrise.play()
         }
         if (uattackstate >= 12 && udefensestate >= 12) battlemessage = 'Angrepet og forsvaret til' + ' ' + uname + ' ' + 'kan ikke gå høyere!'
         updateview()
@@ -108,9 +115,11 @@ function Nastyplot(who, when) {
         if (uattackstate == 11) {
             uattackstate += 1;
             battlemessage = 'Angrepet økte betraktelig!'
+            statrise.play()
         } if (uattackstate < 11) {
             uattackstate += 2;
             battlemessage = 'Angrepet økte betraktelig!'
+            statrise.play()
         } 
         if (uattackstate >= 12) battlemessage = 'Angrepet til' + ' ' + uname + ' ' + 'kan ikke gå høyere!'
         updateuattack(who);
@@ -129,9 +138,11 @@ function Irondefense(who, when) {
         if (udefensestate == 11) {
             udefensestate += 1;
             battlemessage = 'Forsvaret økte betraktelig!'
+            statrise.play()
         } if (udefensestate < 11) {
             udefensestate += 2;
             battlemessage = 'Forsvaret økte betraktelig!'
+            statrise.play()
         } 
         if (udefensestate >= 12) battlemessage = 'Forsvaret til' + ' ' + uname + ' ' + 'kan ikke gå høyere!'
         updateudefense(who);
@@ -183,6 +194,7 @@ function Shadowball(who, when) {
                     adefensestate -= 1
                     updateadefense(who)
                     battlemessage = aname + ' ' + 'sitt forsvar falt!'
+                    statfall.play()
                 }
             }, 2000)
         }
@@ -217,6 +229,7 @@ function Crunch(who, when) {
                     adefensestate -= 1
                     updateadefense(who)
                     battlemessage = aname + ' ' + 'sitt forsvar falt!'
+                    statfall.play()
                 }
             }, 2000)
         }
@@ -249,6 +262,7 @@ function Irontail(who, when) {
                     adefensestate -= 1
                     updateadefense(who)
                     battlemessage = aname + ' ' + 'sitt forsvar falt!'
+                    statfall.play()
                 }
             }, 2000)
         }
@@ -822,12 +836,14 @@ function Bulldoze(who, when) {
                 setTimeout(function (){
                     battlemessage = aname + ' sin speed falt!'
                     rival.pokemon[0].speed = rival.pokemon[0].speed * 0.75
+                    statfall.play()
                 }, 1500)
             }
             if (who == 'foe'){
                 setTimeout(function (){
                     battlemessage = aname + ' sin speed falt!'
                     player.pokemon[0].speed = player.pokemon[0].speed * 0.75
+                    statfall.play()
                 }, 1500)
             }
             updateahp(who, ahp);
@@ -866,6 +882,7 @@ function Psychic(who, when) {
                     adefensestate -= 1
                     updateadefense(who)
                     battlemessage = aname + ' ' + 'sitt forsvar falt!'
+                    statfall.play()
                     updateview()
                 }
             }, 2000)
@@ -904,17 +921,20 @@ function Closecombat(who, when) {
                     battlemessage = uname + ' ' + 'Sitt angrep og forsvar falt';
                     uattackstate--
                     udefensestate--
+                    statfall.play()
                     updateuattack(who, uattackstate)
                     updateudefense(who, udefensestate)
                 }
                 else if (uattackstate > 0) {
                     battlemessage = uname + ' ' + 'Sitt angrep falt';
                     uattackstate--
+                    statfall.play()
                     updateuattack(who, uattackstate)
                 }
                 else if (udefensestate > 0) {
                     udefensestate--
                     battlemessage = uname + ' ' + 'Sitt forsvar falt';
+                    statfall.play()
                     updateuattack(who, uattackstate)
                 }
                 else if (uattackstate <= 0 && udefensestate <= 0) battlemessage = uname + ' ' + 'Sitt angrep og forsvar kan ikke gå lavere';
@@ -946,6 +966,7 @@ function Dracometeor(who, when) {
                 if (uattackstate > 0) {
                     uattackstate--
                     battlemessage = uname + ' sitt angrep falt!';
+                    statfall.play()
                     updateuattack(who, uattackstate)
                 }
                 else battlemessage = uname + ' ' + 'Sitt angrep kan ikke gå lavere';

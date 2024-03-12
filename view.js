@@ -70,7 +70,7 @@ function randomencounterview() {
     <div style="display: flex; flex-direction: column; justify-content: flex-end; ">${pokeballs.toString()} / ${maxpokeballs} Pokeballer</div>
     <button style="width: 14vh; height: 7vh;" onclick="changeview('start'); decidetheme()">Gå til start</button>  
     <button style="width: 14vh; height: 7vh;" onclick= "changeview('allcaught'); decidetheme()">vis fangede pokemon</button>
-    <img style= "width: auto; height: 7vh;" src="pictures/pokeball.png" alt="">
+    <img style= "width: 7vh; height: 7vh;" src="pictures/pokeball.png" alt="">
     </div>
     </div>
 

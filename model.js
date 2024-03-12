@@ -1,5 +1,5 @@
-let burnimage = '<img style="width: 30px; height: auto;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77bf3ba9-0aac-4452-be82-de536b5aab32/dezrx2m-6a187f20-c54f-443c-abb5-6304a14d1d39.png/v1/fill/w_895,h_893/fire_energy_card_vector_symbol_by_biochao_dezrx2m-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3OCIsInBhdGgiOiJcL2ZcLzc3YmYzYmE5LTBhYWMtNDQ1Mi1iZTgyLWRlNTM2YjVhYWIzMlwvZGV6cngybS02YTE4N2YyMC1jNTRmLTQ0M2MtYWJiNS02MzA0YTE0ZDFkMzkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MrtaX3vm446Kd5jU02FfLdjMSyXljqW0ahnU8jEo0aE" alt="">';
-let paraimage = '<img style="width: 30px; height: auto;" src="https://pm1.aminoapps.com/5867/6c6a05dde0693c1dfe454912c83109f165f3f7ab_00.jpg" alt="">';
+let burnimage = '<img style="width: 2vh; height: auto;" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77bf3ba9-0aac-4452-be82-de536b5aab32/dezrx2m-6a187f20-c54f-443c-abb5-6304a14d1d39.png/v1/fill/w_895,h_893/fire_energy_card_vector_symbol_by_biochao_dezrx2m-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI3OCIsInBhdGgiOiJcL2ZcLzc3YmYzYmE5LTBhYWMtNDQ1Mi1iZTgyLWRlNTM2YjVhYWIzMlwvZGV6cngybS02YTE4N2YyMC1jNTRmLTQ0M2MtYWJiNS02MzA0YTE0ZDFkMzkucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MrtaX3vm446Kd5jU02FfLdjMSyXljqW0ahnU8jEo0aE" alt="">';
+let paraimage = '<img style="width: 2vh; height: auto;" src="https://pm1.aminoapps.com/5867/6c6a05dde0693c1dfe454912c83109f165f3f7ab_00.jpg" alt="">';
 let playerstatusimage = ''
 let rivalstatusimage = ''
 let playerstatus = false
@@ -35,12 +35,12 @@ let rival = {
     name: 'Aaron',
     avatar: `<div style="position: fixed; top: 5%; right: 5%; width: 150px; text-align: center">
     Aaron
-    <img style="width: 200px; height: auto" src="https://images6.fanpop.com/image/photos/34100000/Aaron-pokemon-aaron-34187812-313-474.gif" alt="">
+    <img style="width: 14vh; height: auto" src="https://images6.fanpop.com/image/photos/34100000/Aaron-pokemon-aaron-34187812-313-474.gif" alt="">
     </div>
     `,
     startviewavatar: `
-    <div style="margin-left: 40px">
-    <img style = "width: 200px; height: auto" src="https://www.serebii.net/pokemonmasters/syncpairs/cynthia.png" alt="">
+    <div style="margin-left: 2.3vh">
+    <img style = "width: 14vh; height: auto" src="https://www.serebii.net/pokemonmasters/syncpairs/cynthia.png" alt="">
     </div>
     `,
 

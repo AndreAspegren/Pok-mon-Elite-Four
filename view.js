@@ -335,8 +335,8 @@ function playerleadvsrival() {
          <div style="position: absolute, top:0%; right: 0%">${playerstatus ? playerstatusimage : ''}</div>
          </div>
         <div style="display: flex; justify-content: left;">
-        <div style="flex: 0 0 auto; width:${(player.pokemon[0].health / player.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: green"></div>
-        <div style="flex: 0 0 auto; width:${((player.pokemon[0].maxhealth - player.pokemon[0].health) / player.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: red"></div>
+        <div style="flex: 0 0 auto; width:${(player.pokemon[0].health / player.pokemon[0].maxhealth * 22).toString()}vh; height: 2vh; background-color: green"></div>
+        <div style="flex: 0 0 auto; width:${((player.pokemon[0].maxhealth - player.pokemon[0].health) / player.pokemon[0].maxhealth * 22).toString()}vh; height: 2vh; background-color: red"></div>
         </div>
         <img style="width: 22vh; height: auto;" src="${player.pokemon[0].image}" alt="${player.pokemon[0].name}">
         </div>
@@ -363,8 +363,8 @@ function rivalleadvsplayer() {
          <div style="position: absolute, top:0%; right: 0%">${rivalstatus ? rivalstatusimage : ''}</div>
          </div>
         <div style="display: flex; justify-content: left;">
-        <div style="flex: 0 0 auto; width:${(rival.pokemon[0].health / rival.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: green"></div>
-        <div style="flex: 0 0 auto; width:${((rival.pokemon[0].maxhealth - rival.pokemon[0].health) / rival.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: red"></div>
+        <div style="flex: 0 0 auto; width:${(rival.pokemon[0].health / rival.pokemon[0].maxhealth * 22).toString()}vh; height: 2vh; background-color: green"></div>
+        <div style="flex: 0 0 auto; width:${((rival.pokemon[0].maxhealth - rival.pokemon[0].health) / rival.pokemon[0].maxhealth * 22).toString()}vh; height: 2vh; background-color: red"></div>
         </div>
         <img style="width: 22vh; height: auto;" src="${rival.pokemon[0].image}" alt="${rival.pokemon[0].name}">
         </div>

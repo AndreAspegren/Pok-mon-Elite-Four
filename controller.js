@@ -210,9 +210,9 @@ function deathmanager(who) {
 
 function changerival(length) {
     if (length == 9) {
-        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 150px; text-align: center">
+        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 11vh; text-align: center">
         Bertha
-        <img style="width: 200px; height: auto" src="pictures/bertha.png" alt="">
+        <img style="width: 14vh; height: auto" src="pictures/bertha.png" alt="">
         </div>
         `
         rival.name = 'Bertha'
@@ -232,9 +232,9 @@ function changerival(length) {
         }, 2000)
     }
     if (length == 7) {
-        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 150px; text-align: center">
+        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 11vh; text-align: center">
         Flint
-        <img style="width: 200px; height: auto" src="https://archives.bulbagarden.net/media/upload/thumb/a/a8/Diamond_Pearl_Flint.png/150px-Diamond_Pearl_Flint.png" alt="">
+        <img style="width: 22vh; height: auto" src="https://archives.bulbagarden.net/media/upload/thumb/a/a8/Diamond_Pearl_Flint.png/150px-Diamond_Pearl_Flint.png" alt="">
         </div>
         `
         rival.name = 'Flint'
@@ -254,9 +254,9 @@ function changerival(length) {
         }, 2000)
     }
     if (length == 5) {
-        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 150px; text-align: center">
+        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 11vh; text-align: center">
         Lucian
-        <img style="width: 200px; height: auto" src="pictures/lucian.png" alt="">
+        <img style="width: 22vh; height: auto" src="pictures/lucian.png" alt="">
         </div>
         `
         rival.name = 'Lucian'
@@ -276,9 +276,9 @@ function changerival(length) {
         }, 2000)
     }
     if (length == 3) {
-        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 150px; text-align: center">
+        rival.avatar = `<div style="position: fixed; top: 5%; right: 5%; width: 11vh; text-align: center">
         Cynthia
-        <img style="width: 200px; height: auto" src="https://www.serebii.net/pokemonmasters/syncpairs/cynthia.png" alt="">
+        <img style="width: 22vh; height: auto" src="https://www.serebii.net/pokemonmasters/syncpairs/cynthia.png" alt="">
         </div>
         `
         elitefourtheme.pause()

@@ -22,11 +22,11 @@ function startview(){
     ${muteknapp()}
     <div style="position: fixed; top: 10%; right: 10%">
     ${rival.startviewavatar}
-    <button style="display: flex; align-items: center; justify-content: center; width: 300px" 
+    <button style="display: flex; align-items: center; justify-content: center; width: 22vh" 
     onclick="${player.pokemon.length == 0 ? 'updateview()' : 'changeview(\'rival\'); elitefourtheme.play(); elitefourtheme.volume = 0.15; adventuretheme.pause(); decidetheme(); leadcries()'}">
     ${player.pokemon.length == 0 ? 'Du trenger minst en pokemon for å utfordre Elite Four!' : 'Utfordre Elite Four'}</button>
     </div> 
-    <button onclick="rerolls--; changeview('randomencounter'); decidetheme()" style="position: fixed; bottom: 43%; left: 45%; width: 300px; height: 100px; background-color: 
+    <button onclick="rerolls--; changeview('randomencounter'); decidetheme()" style="position: fixed; bottom: 43%; left: 45%; width: 22vh; height: 7vh; background-color: 
     transparent; border: 2px solid orange; display: flex; align-items: center; justify-content: center; text-align: center;">
     Random Encounter</button>                                                        
     <div style = "display: flex;">
@@ -35,7 +35,7 @@ function startview(){
     <br>
     <div style= "display: flex">  
     <div style="position: fixed; bottom: 0; right: 10%">
-    <img onclick="changeview('allcaught'); decidetheme()" style= "width: 300px; height: auto;" 
+    <img onclick="changeview('allcaught'); decidetheme()" style= "width: 22vh; height: auto;" 
     src="pictures/bag.png" alt="" >
     </div> 
     ` 
@@ -60,17 +60,17 @@ function randomencounterview() {
     <div>${pokemon[index].name}</div>
     <div>Level: ${pokemon[index].level}</div>
     <div>Health: ${pokemon[index].health}</div>
-    <img style= "width: 300px; height: auto;" src="${pokemon[index].image}" alt="${pokemon[index].name}">
+    <img style= "width: 22vh; height: auto;" src="${pokemon[index].image}" alt="${pokemon[index].name}">
     </div>
-    <div style= "position: fixed; bottom: 7%; right: 10%; width: 400px">
-    <div style="width: 400px;" class="textdisplay">En vill ${pokemon[index].name} dukket opp!</div>
+    <div style= "position: fixed; bottom: 7%; right: 10%; width: 29vh">
+    <div style="width: 28vh;" class="textdisplay">En vill ${pokemon[index].name} dukket opp!</div>
     <div style="display: grid; grid-template-columns: repeat(3, 1fr);">
     ${genbutton()}
-    <button style="width: 200px; height: 100px;" onclick="rerolls--; changeview('randomencounter'); decidetheme()" ${rerolls <= 0 ? 'Disabled' : ''}>${rerolls} / ${maxrerolls} rerolls</button>
-    <div style="display: flex; flex-direction: column; justify-content: flex-end; margin-left: 4px;">${pokeballs.toString()} / ${maxpokeballs} Pokeballer</div>
-    <button style="width: 200px; height: 100px;" onclick="changeview('start'); decidetheme()">Gå til start</button>  
-    <button style="width: 200px; height: 100px;" onclick= "changeview('allcaught'); decidetheme()">vis fangede pokemon</button>
-    <img style= "width: auto; height: 100px;" src="pictures/pokeball.png" alt="">
+    <button style="width: 14vh; height: 7vh;" onclick="rerolls--; changeview('randomencounter'); decidetheme()" ${rerolls <= 0 ? 'Disabled' : ''}>${rerolls} / ${maxrerolls} rerolls</button>
+    <div style="display: flex; flex-direction: column; justify-content: flex-end; ">${pokeballs.toString()} / ${maxpokeballs} Pokeballer</div>
+    <button style="width: 14vh; height: 7vh;" onclick="changeview('start'); decidetheme()">Gå til start</button>  
+    <button style="width: 14vh; height: 7vh;" onclick= "changeview('allcaught'); decidetheme()">vis fangede pokemon</button>
+    <img style= "width: auto; height: 7vh;" src="pictures/pokeball.png" alt="">
     </div>
     </div>
 
@@ -101,17 +101,17 @@ function caughtview(){
         ${muteknapp()}
         <div style="position: fixed; top: 40%; right: 45%">
         <h1>Du fanget: ${pokemon[index].name}</h1>
-        <img style= "width: 300px; height: auto;" src="${pokemon[index].image}" alt="${pokemon[index].name}">
+        <img style= "width: 22vh; height: auto;" src="${pokemon[index].image}" alt="${pokemon[index].name}">
         <div>${pokemon[index].name}</div>
         <div>Level: ${pokemon[index].level}</div>
         <div>Health: ${pokemon[index].health}</div>
         </div>
         <br/>
         <div style="position: fixed; bottom: 15%; right: 12%; display: grid; grid-template-columns: repeat(2, 1fr)">
-        <button style="width: 200px; height: 100px;" onclick="changeview('start'); decidetheme()">Gå til start</button> 
-        <button style="width: 200px; height: 100px;" onclick="rerolls--; changeview('randomencounter'); decidetheme()">${rerolls} / ${maxrerolls} rerolls</button>
-        <button style="width: 200px; height: 100px;" onclick="${player.pokemon.length == 0 ? 'updateview()' : 'changeview(\'rival\'); elitefourtheme.play(); elitefourtheme.volume = 0.15; adventuretheme.pause(); decidetheme(); leadcries()'}">sloss med Elite Four</button> 
-        <button style="width: 200px; height: 100px;" onclick="changeview('allcaught'); decidetheme()">vis fangede pokemon</button>  
+        <button style="width: 14vh; height: 7vh;" onclick="changeview('start'); decidetheme()">Gå til start</button> 
+        <button style="width: 14vh; height: 7vh;" onclick="rerolls--; changeview('randomencounter'); decidetheme()">${rerolls} / ${maxrerolls} rerolls</button>
+        <button style="width: 14vh; height: 7vh;" onclick="${player.pokemon.length == 0 ? 'updateview()' : 'changeview(\'rival\'); elitefourtheme.play(); elitefourtheme.volume = 0.15; adventuretheme.pause(); decidetheme(); leadcries()'}">sloss med Elite Four</button> 
+        <button style="width: 14vh; height: 7vh;" onclick="changeview('allcaught'); decidetheme()">vis fangede pokemon</button>  
         </div>      
         `;
     }
@@ -120,17 +120,17 @@ function caughtview(){
         ${muteknapp()}
         <div style="position: fixed; top: 40%; right: 45%">
         <h1>${pokemon[index].name} slapp unna!</h1>
-        <img style= "width: 300px; height: auto;" src="${pokemon[index].image}" alt="${pokemon[index].name}">
+        <img style= "width: 22vh; height: auto;" src="${pokemon[index].image}" alt="${pokemon[index].name}">
         <div>${pokemon[index].name}</div>
         <div>Level: ${pokemon[index].level}</div>
         <div>Health: ${pokemon[index].health}</div>
         </div>
         <br/>
         <div style="position: fixed; bottom: 15%; right: 12%; display: grid; grid-template-columns: repeat(2, 1fr)">
-        <button style="width: 200px; height: 100px;" onclick="changeview('start'); decidetheme()">Gå til start</button> 
-        <button style="width: 200px; height: 100px;" onclick="rerolls--; changeview('randomencounter'); decidetheme()">${rerolls} / ${maxrerolls} rerolls</button>
-        <button style="width: 200px; height: 100px;" onclick="${player.pokemon.length == 0 ? '' : 'changeview(\'rival\'); elitefourtheme.play(); elitefourtheme.volume = 0.15; decidetheme(); leadcries()'}">sloss med Elite Four</button> 
-        <button style="width: 200px; height: 100px;" onclick="changeview('allcaught'); decidetheme()">vis fangede pokemon</button>  
+        <button style="width: 14vh; height: 7vh;" onclick="changeview('start'); decidetheme()">Gå til start</button> 
+        <button style="width: 14vh; height: 7vh;" onclick="rerolls--; changeview('randomencounter'); decidetheme()">${rerolls} / ${maxrerolls} rerolls</button>
+        <button style="width: 14vh; height: 7vh;" onclick="${player.pokemon.length == 0 ? '' : 'changeview(\'rival\'); elitefourtheme.play(); elitefourtheme.volume = 0.15; decidetheme(); leadcries()'}">sloss med Elite Four</button> 
+        <button style="width: 14vh; height: 7vh;" onclick="changeview('allcaught'); decidetheme()">vis fangede pokemon</button>  
         </div>      
         `;
     }
@@ -209,9 +209,9 @@ function changepokemon(){
             <div>${player.pokemon[i].name}</div>
             <div>Level: ${player.pokemon[i].level}</div>
             <div>Health: ${player.pokemon[i].health}</div>
-            <img style= "width: 300px; height: auto;" src="${player.pokemon[i].image}" alt="${player.pokemon[i].name}">
-            <div style="display:flex; width:300px">
-            <button style= "width: 300px; height: 40;" onclick="${i != 0 ? `changeto(${i})` : `updateview()`}">Bytt til</button>
+            <img style= "width: 22vh; height: auto;" src="${player.pokemon[i].image}" alt="${player.pokemon[i].name}">
+            <div style="display:flex; width:22vh">
+            <button style= "width: 22vh; height: 3vh;" onclick="${i != 0 ? `changeto(${i})` : `updateview()`}">Bytt til</button>
             </div>
             </div>
             `;
@@ -250,8 +250,8 @@ function currentlycaughtpokemon(){
             <div>Health: ${player.pokemon[i].health}</div>
             <img onclick="makelead(${i})" style= "width: auto; height: 15vh;" src="${player.pokemon[i].image}" alt="${player.pokemon[i].name}">
             <div style="display:flex; width:300px">
-            <button style= "width: 150px; height: 4vh;" onclick="makelead(${i})">Gjør til lead</button>
-            <button style= "width: 150px; height: 4vh;" onclick="remove(${i})">Slipp fri</button>
+            <button style= "width: 10vh; height: 4vh;" onclick="makelead(${i})">Gjør til lead</button>
+            <button style= "width: 10vh; height: 4vh;" onclick="remove(${i})">Slipp fri</button>
             </div>
             </div>
             `;
@@ -262,8 +262,8 @@ function currentlycaughtpokemon(){
         `<div style="position: fixed; top: 15%; right: 30%; gap: 20px; display: grid; grid-template-columns: repeat(2, 1fr)">` +
         pokemonloop + '</div>' +
         `<div style="position: fixed; bottom: 15%; right: 5%">
-        <button style="width: 200px; height: 100px;" onclick="changeview('start'); decidetheme()">Gå til start</button>
-        <button style="width: 200px; height: 100px;" onclick="rerolls--; changeview('randomencounter'); decidetheme()">${rerolls} / ${maxrerolls} rerolls</button>
+        <button style="width: 14vh; height: 7vh;" onclick="changeview('start'); decidetheme()">Gå til start</button>
+        <button style="width: 14vh; height: 7vh;" onclick="rerolls--; changeview('randomencounter'); decidetheme()">${rerolls} / ${maxrerolls} rerolls</button>
         </div>`;
 }
 let potions = 10
@@ -271,17 +271,17 @@ function playerbuttons(){
         buttons =  /*HTML*/`
         <div style="position: fixed; bottom: 8%; right: 0%">
         <div style="display: flex;">
-        <div style="width: 400px;" class="textdisplay">
+        <div style="width: 28vh;" class="textdisplay">
         ${battlemessage}
         </div>
         <div style="display: flex; flex-direction: column; justify-content: flex-end; margin-left: 4px; height: 40px;">${potions.toString()} / 10 potions</div>
         </div>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr)">
-        <button style="width: 200px; height: 100px;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move1}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move1name}</button>
-        <button style="width: 200px; height: 100px;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move2}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move2name}</button>
+        <button style="width: 14vh; height: 7vh;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move1}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move1name}</button>
+        <button style="width: 14vh; height: 7vh;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move2}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move2name}</button>
         ${returnpotion()}
-        <button style="width: 200px; height: 100px;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move3}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move3name}</button>
-        <button style="width: 200px; height: 100px;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move4}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move4name}</button>
+        <button style="width: 14vh; height: 7vh;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move3}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move3name}</button>
+        <button style="width: 14vh; height: 7vh;" onclick="battlemanager(${player.pokemon.length == 0 ? '' : player.pokemon[0].move4}, '0')" ${buttonsenabled ? '' : 'Disabled'} ${player.pokemon.length == 0 ? 'Disabled' : ''}>${player.pokemon.length == 0 ? '' : player.pokemon[0].move4name}</button>
         ${returnbag()}
         </div>
         </div>
@@ -291,17 +291,17 @@ function playerbuttons(){
 
 function returnpotion(){
     if (playergigaimpactcd == 2 || buttonsenabled == false) {
-      button =  `<img style= "width: auto; height: 100px;" src="https://www.serebii.net/itemdex/sprites/sv/throatspray.png" alt="" >`
-    } else button = ` <img onclick="${potions > 0 ? 'consumepotion()' : 'updateview()'}" style= "width: auto; height: 100px;" 
+      button =  `<img style= "width: auto; height: 7vh;" src="https://www.serebii.net/itemdex/sprites/sv/throatspray.png" alt="" >`
+    } else button = ` <img onclick="${potions > 0 ? 'consumepotion()' : 'updateview()'}" style= "width: auto; height: 7vh;" 
     src="https://www.serebii.net/itemdex/sprites/sv/throatspray.png" alt="" >`
     return  button
 }
 
 function returnbag(){
     if (playergigaimpactcd == 2 || buttonsenabled == false) {
-        button =  `<img onclick="updateview()" style= "width: auto; height: 100px;" 
+        button =  `<img onclick="updateview()" style= "width: auto; height: 7vh;" 
         src="pictures/bag.png" alt="" >`
-      } else button = `<img onclick="changepokemon(); currentview = 'changepokemon'; decidetheme()" style= "width: auto; height: 100px;" 
+      } else button = `<img onclick="changepokemon(); currentview = 'changepokemon'; decidetheme()" style= "width: auto; height: 7vh;" 
       src="pictures/bag.png" alt="" >`
       return  button
 }
@@ -335,10 +335,10 @@ function playerleadvsrival() {
          <div style="position: absolute, top:0%; right: 0%">${playerstatus ? playerstatusimage : ''}</div>
          </div>
         <div style="display: flex; justify-content: left;">
-        <div style="flex: 0 0 auto; width:${(player.pokemon[0].health / player.pokemon[0].maxhealth * 300).toString()}px; height: 30px; background-color: green"></div>
-        <div style="flex: 0 0 auto; width:${((player.pokemon[0].maxhealth - player.pokemon[0].health) / player.pokemon[0].maxhealth * 300).toString()}px; height: 30px; background-color: red"></div>
+        <div style="flex: 0 0 auto; width:${(player.pokemon[0].health / player.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: green"></div>
+        <div style="flex: 0 0 auto; width:${((player.pokemon[0].maxhealth - player.pokemon[0].health) / player.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: red"></div>
         </div>
-        <img style="width: 300px; height: auto;" src="${player.pokemon[0].image}" alt="${player.pokemon[0].name}">
+        <img style="width: 22vh; height: auto;" src="${player.pokemon[0].image}" alt="${player.pokemon[0].name}">
         </div>
         `;
         return playerlead
@@ -363,10 +363,10 @@ function rivalleadvsplayer() {
          <div style="position: absolute, top:0%; right: 0%">${rivalstatus ? rivalstatusimage : ''}</div>
          </div>
         <div style="display: flex; justify-content: left;">
-        <div style="flex: 0 0 auto; width:${(rival.pokemon[0].health / rival.pokemon[0].maxhealth * 300).toString()}px; height: 30px; background-color: green"></div>
-        <div style="flex: 0 0 auto; width:${((rival.pokemon[0].maxhealth - rival.pokemon[0].health) / rival.pokemon[0].maxhealth * 300).toString()}px; height: 30px; background-color: red"></div>
+        <div style="flex: 0 0 auto; width:${(rival.pokemon[0].health / rival.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: green"></div>
+        <div style="flex: 0 0 auto; width:${((rival.pokemon[0].maxhealth - rival.pokemon[0].health) / rival.pokemon[0].maxhealth * 300).toString()}px; height: 2vh; background-color: red"></div>
         </div>
-        <img style="width: 300px; height: auto;" src="${rival.pokemon[0].image}" alt="${rival.pokemon[0].name}">
+        <img style="width: 22vh; height: auto;" src="${rival.pokemon[0].image}" alt="${rival.pokemon[0].name}">
         </div>
         `;
         return rivallead
@@ -377,13 +377,13 @@ function rivalleadvsplayer() {
 
 function genbutton(){
     if (pokeballs > 0){
-        button =  `<button style="width: 200px; height: 100px;" onclick="pokeballs--; changeview('caught'); decidetheme()" ${player.pokemon.length == 6 ? 'Disabled' : ''}>${player.pokemon.length == 6 ? 'Maks 6 pokemon' : 'Fang pokemon'}</button>`
+        button =  `<button style="width: 14vh; height: 7vh;" onclick="pokeballs--; changeview('caught'); decidetheme()" ${player.pokemon.length == 6 ? 'Disabled' : ''}>${player.pokemon.length == 6 ? 'Maks 6 pokemon' : 'Fang pokemon'}</button>`
     }
     if (pokeballs <= 0 || rerolls <= 0){
-        button = button =  `<button style="width: 200px; height: 100px;" Disabled >Tom for pokeballer</button>`
+        button = button =  `<button style="width: 14vh; height: 7vh;" Disabled >Tom for pokeballer</button>`
     }
     if (rerolls <= 0){
-        button = button =  `<button style="width: 200px; height: 100px;" Disabled >Tom for rerolls</button>`
+        button = button =  `<button style="width: 14vh; height: 7vh;" Disabled >Tom for rerolls</button>`
     }
 return button
 }

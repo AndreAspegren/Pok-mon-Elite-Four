@@ -660,6 +660,56 @@ const bulletseed = new Audio('sounds/bulletseed.mp3')
 const psychic = new Audio('sounds/psychic.mp3')
 const bulldoze = new Audio('sounds/bulldoze.mp3')
 const potion = new Audio('sounds/potion.mp3')
+const magikarp = new Audio('sounds/magikarp.mp3')
+const breloom = new Audio('sounds/breloom.mp3')
+const slowbro = new Audio('sounds/slowbro.mp3')
+const weavile = new Audio('sounds/weavile.mp3')
+const bidoof = new Audio('sounds/bidoof.mp3')
+const arceus = new Audio('sounds/arceus.mp3')
+const lugia = new Audio('sounds/lugia.mp3')
+const garchomp = new Audio('sounds/garchomp.mp3')
+const alakazam = new Audio('sounds/alakazam.mp3')
+const bronzong = new Audio('sounds/bronzong.mp3')
+const infernape = new Audio('sounds/infernape.mp3')
+const rapidash = new Audio('sounds/rapidash.mp3')
+const hippowdon = new Audio('sounds/hippowdon.mp3')
+const golem = new Audio('sounds/golem.mp3')
+const heracross = new Audio('sounds/heracross.mp3')
+const geodude = new Audio('sounds/geodude.mp3')
+const gengar = new Audio('sounds/gengar.mp3')
+const spritzee = new Audio('sounds/spritzee.mp3')
+const dwebble = new Audio('sounds/dwebble.mp3')
+const froakie = new Audio('sounds/froakie.mp3')
+const gible = new Audio('sounds/gible.mp3')
+const drapion = new Audio('sounds/drapion.mp3')
+const pikachu = new Audio('sounds/pikachu.mp3')
+
+const sounds = {
+    heracross: heracross,
+    drapion: drapion,
+    pikachu: pikachu,
+    magikarp: magikarp,
+    breloom: breloom,
+    slowbro: slowbro,
+    weavile: weavile,
+    bidoof: bidoof,
+    arceus: arceus,
+    lugia: lugia,
+    garchomp: garchomp,
+    alakazam: alakazam,
+    bronzong: bronzong,
+    infernape: infernape,
+    rapidash: rapidash,
+    hippowdon: hippowdon,
+    golem: golem,
+    heracross: heracross,
+    geodude: geodude,
+    gengar: gengar,
+    spritzee: spritzee,
+    froakie: froakie,
+    dwebble: dwebble,
+    gible: gible,
+};
 
 
 appDiv.querySelectorAll('div').forEach(div => {

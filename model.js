@@ -580,9 +580,6 @@ let pokemon = [
     }
 ]
 
-let randompokemon = [pokemon[0].name, pokemon[1].name, pokemon[2].name, pokemon[3].name, pokemon[4].name, pokemon[5].name
-, pokemon[6].name, pokemon[7].name, pokemon[8].name, pokemon[9].name, pokemon[10].name, pokemon[11].name, pokemon[12].name, pokemon[13].name
-, pokemon[14].name, pokemon[15].name, pokemon[16].name, pokemon[17].name, pokemon[18].name, pokemon[19].name, pokemon[20].name, pokemon[21].name];
 let viewstate = 0;
 let caughtpokemonname;
 let test = 0;

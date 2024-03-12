@@ -537,6 +537,7 @@ function Recover(who, when) {
 
 function Stoneedge(who, when) {
     battlemessage = uname + ' ' + 'brukte Stone Edge!'
+    updateview()
     if (random < 80 * uaccuracy) setTimeout(() => stoneedge.play(), 1000)
     if (random < 80 * uaccuracy) {
     setTimeout(function () {

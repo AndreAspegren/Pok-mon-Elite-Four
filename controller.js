@@ -142,7 +142,7 @@ function endofturnevents() {
     }
     else if (playerburned && rivalburned) {
         player.pokemon[0].health -= (player.pokemon[0].maxhealth * 0.125)
-        rival.pokemon[0].health -= (player.pokemon[0].maxhealth * 0.125)
+        rival.pokemon[0].health -= (rival.pokemon[0].maxhealth * 0.125)
         battlemessage = 'Begge tok brannskade'
         updateview()
     }

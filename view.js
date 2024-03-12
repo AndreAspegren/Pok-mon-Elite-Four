@@ -248,10 +248,10 @@ function currentlycaughtpokemon(){
             <div>${player.pokemon[i].name}</div>
             <div>Level: ${player.pokemon[i].level}</div>
             <div>Health: ${player.pokemon[i].health}</div>
-            <img onclick="makelead(${i})" style= "width: auto; height: 200px;" src="${player.pokemon[i].image}" alt="${player.pokemon[i].name}">
+            <img onclick="makelead(${i})" style= "width: auto; height: 15vh;" src="${player.pokemon[i].image}" alt="${player.pokemon[i].name}">
             <div style="display:flex; width:300px">
-            <button style= "width: 150px; height: 40;" onclick="makelead(${i})">Gjør til lead</button>
-            <button style= "width: 150px; height: 40;" onclick="remove(${i})">Slipp fri</button>
+            <button style= "width: 150px; height: 4vh;" onclick="makelead(${i})">Gjør til lead</button>
+            <button style= "width: 150px; height: 4vh;" onclick="remove(${i})">Slipp fri</button>
             </div>
             </div>
             `;

@@ -57,7 +57,7 @@ function Poweruppunch(who, when) {
             updateahp(who, ahp)
             updateview()
             setTimeout(function () {
-                if (random2 < 80 && uattackstate < 12) {
+                if (random < 100 && uattackstate < 12) {
                     uattackstate += 1
                     updateuattack(who)
                     battlemessage = uname + ' ' + 'sitt angrep økte!'
